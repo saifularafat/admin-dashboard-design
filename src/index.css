@@ -19,9 +19,17 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #e9e7e7;
+  /* background-color: #e9e7e7; */
   height: 100vh;
 }
+/* Header CSS style  */
+.icon_style{
+  @apply text-2xl hover:text-neutral font-medium duration-300 transition-all
+}
+.icon_right_style{
+  @apply text-3xl text-primary font-bold hover:text-neutral duration-300 transition-all
+}
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hideScrollBar::-webkit-scrollbar {
