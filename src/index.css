@@ -2,7 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* global CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
 body {
-    background-color: #e9e7e7;
-    height: 100vh;
-  }
+  background-color: #e9e7e7;
+  height: 100vh;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScrollBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.myScroll:hover::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+}
+
+.myScroll::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.myScroll::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.myScroll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5rem;
+}
