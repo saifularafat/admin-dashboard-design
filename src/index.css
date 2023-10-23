@@ -24,10 +24,10 @@ body {
 }
 /* Header CSS style  */
 .icon_style{
-  @apply text-2xl hover:text-neutral font-medium duration-300 transition-all
+  @apply text-2xl hover:text-emerald-400 font-medium duration-300 transition-all
 }
 .icon_right_style{
-  @apply text-3xl text-primary font-bold hover:text-neutral duration-300 transition-all
+  @apply text-3xl font-bold hover:text-emerald-400 duration-300 transition-all
 }
 
 
