@@ -6,21 +6,30 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        "primary": "#80f780",
-        "secondary": "#ea6294",
-        "accent": "#3717c4",
-        "neutral": "#242028",
-        "base-100": "#282b58",
-        "info": "#57b6cb",
-        "success": "#159374",
-        "error": "#e43f25",
+      extend: {
+        theme: {
+
+        },
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('tailwind-scrollbar')],
   daisyui: {
-    themes: ["acid", "dark"],
+    themes: [{
+      customLightTheme: {
+        color: '#0b0504',
+        background: '#f0f0f0',
+        primary: '#4098a0',
+        secondary: '#27272a',
+        accent: '#477361',
+      },
+      customDarkTheme: {
+        color: '#ffffff',
+        background: '#0b0504',
+        primary: '#4098a0',
+        secondary: '#27272a',
+        accent: '#92d3b8',
+      },
+    }]
   },
 }
-
