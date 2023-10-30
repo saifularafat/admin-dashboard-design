@@ -61,7 +61,7 @@ const Header = () => {
                     <div className="flex items-center md:ml-5">
                         <div className="text-end leading-none">
                             <h3 className="text-sm md:font-semibold font-medium leading-none md:text-xl">Sen Watson</h3>
-                            <p className="lowercase md:text-sm text-xs">member</p>
+                            <p className="lowercase md:text-sm text-xs">Admin</p>
                         </div>
                         <div className="avatar md:ml-3 ml-1">
                             <div className="w-12 rounded-full">

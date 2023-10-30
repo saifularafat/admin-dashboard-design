@@ -1,6 +1,6 @@
 import { AiFillHome, AiOutlineContainer, AiOutlineMail } from 'react-icons/ai';
 import { IoBarChartOutline, IoCheckboxOutline } from 'react-icons/io5';
-import { BiChart, BiEdit,BiLogInCircle,BiSolidUser } from 'react-icons/bi';
+import { BiChart, BiEdit, BiLogInCircle, BiSolidUser } from 'react-icons/bi';
 import { RiArrowDownSFill, RiArrowUpSFill, RiTodoLine } from 'react-icons/ri';
 import { BsChatSquareDots, BsCheck2Square, BsFillPieChartFill, BsFillShieldFill, BsPerson, BsPersonCheck } from 'react-icons/bs';
 import { FaCartShopping, FaQuoteRight, FaUsersViewfinder } from 'react-icons/fa6';
@@ -18,79 +18,74 @@ export const SidebarData = [
         id: 1,
         title: "Dashboard",
         path: "#",
-       icons:AiFillHome,
+        icons: AiFillHome,
         openIcon: RiArrowDownSFill,
         closeIcon: RiArrowUpSFill,
         subNav: [
             {
                 title: "eCommerce",
                 path: "/dashboard/ecommerce",
-               icons: HiOutlineShoppingCart,
+                icons: HiOutlineShoppingCart,
             },
             {
                 title: "Analytics",
                 path: "/dashboard/analytics",
-               icons: IoBarChartOutline,
+                icons: IoBarChartOutline,
             },
         ]
     },
+    
     {
         id: 2,
         title: "Email ",
         path: "/dashboard/email",
-       icons: AiOutlineMail,
+        icons: AiOutlineMail,
     },
     {
         id: 3,
         title: "Chat",
         path: "/dashboard/chat",
-       icons: BsChatSquareDots,
+        icons: BsChatSquareDots,
     },
     {
         id: 4,
         title: "Todo",
         path: "/dashboard/todo",
-       icons: IoCheckboxOutline,
-    },
-    {
-        id: 5,
-        title: "email Dashboard",
-        path: "/dashboard/#",
-       icons: AiOutlineMail,
+        icons: IoCheckboxOutline,
     },
     {
         id: 6,
         title: "calender",
         path: "/dashboard/calender",
-       icons: RiTodoLine,
+        icons: RiTodoLine,
     },
     {
         id: 7,
         title: "invoice Dashboard",
         path: "#",
-       icons: AiOutlineContainer,
+        icons: AiOutlineContainer,
         openIcon: RiArrowDownSFill,
         closeIcon: RiArrowUpSFill,
         subNav: [
             {
                 title: "Full List",
                 path: "/dashboard/fullList",
-               icons: HiOutlineClipboardDocumentList,
+                icons: HiOutlineClipboardDocumentList,
             },
             {
                 title: "Preview",
                 path: "/dashboard/preview",
-               icons: HiOutlineViewfinderCircle,
+                icons: HiOutlineViewfinderCircle,
             },
             {
                 title: "Edit",
                 path: "/dashboard/edit",
-               icons: BiEdit,
+                icons: BiEdit,
             },
             {
                 title: "Add",
                 path: "/dashboard/add",
-               icons: GrAddCircle,
+                icons: GrAddCircle,
             },
         ]
     },
@@ -98,19 +93,19 @@ export const SidebarData = [
         id: 8,
         title: "Roles & Permission",
         path: "#",
-       icons: BsFillShieldFill,
+        icons: BsFillShieldFill,
         openIcon: RiArrowDownSFill,
         closeIcon: RiArrowUpSFill,
         subNav: [
             {
                 title: "Roles",
                 path: "/dashboard/roles",
-               icons: GrUserSettings,
+                icons: GrUserSettings,
             },
             {
                 title: "Permission",
                 path: "/dashboard/permission",
-               icons: MdLockPerson,
+                icons: MdLockPerson,
             },
         ]
     },
@@ -118,29 +113,29 @@ export const SidebarData = [
         id: 9,
         title: "eCommerce Shops",
         path: "#",
-       icons: FaCartShopping,
+        icons: FaCartShopping,
         openIcon: RiArrowDownSFill,
         closeIcon: RiArrowUpSFill,
         subNav: [
             {
                 title: "Shops",
                 path: "/dashboard/shops",
-               icons: GiShoppingCart,
+                icons: GiShoppingCart,
             },
             {
                 title: "WishList",
                 path: "/dashboard/wishlist",
-               icons: TbJewishStar,
+                icons: TbJewishStar,
             },
             {
                 title: "Details",
                 path: "/dashboard/details",
-               icons: TbListDetails,
+                icons: TbListDetails,
             },
             {
                 title: "Checkbox",
                 path: "/dashboard/checkbox",
-               icons: BsCheck2Square,
+                icons: BsCheck2Square,
             },
         ]
     },
@@ -148,19 +143,19 @@ export const SidebarData = [
         id: 10,
         title: "Users",
         path: "#",
-       icons: BiSolidUser,
+        icons: BiSolidUser,
         openIcon: RiArrowDownSFill,
         closeIcon: RiArrowUpSFill,
         subNav: [
             {
                 title: "List",
                 path: "/dashboard/list",
-               icons: HiOutlineUserGroup,
+                icons: HiOutlineUserGroup,
             },
             {
                 title: "View",
                 path: "/dashboard/view",
-               icons: FaUsersViewfinder,
+                icons: FaUsersViewfinder,
             },
         ]
     },
@@ -168,19 +163,19 @@ export const SidebarData = [
         id: 11,
         title: "Pages",
         path: "#",
-       icons: SiPowerpages,
+        icons: SiPowerpages,
         openIcon: RiArrowDownSFill,
         closeIcon: RiArrowUpSFill,
         subNav: [
             {
                 title: "Profile",
                 path: "/dashboard/profile",
-               icons: BsPerson,
+                icons: BsPerson,
             },
             {
                 title: "FAQ",
                 path: "/dashboard/faq",
-               icons: FaQuoteRight,
+                icons: FaQuoteRight,
             },
         ]
     },
@@ -188,19 +183,19 @@ export const SidebarData = [
         id: 12,
         title: "Authentication",
         path: "#",
-       icons: BsPersonCheck,
+        icons: BsPersonCheck,
         openIcon: RiArrowDownSFill,
         closeIcon: RiArrowUpSFill,
         subNav: [
             {
                 title: "log In",
                 path: "/dashboard/login",
-               icons: BiLogInCircle,
+                icons: BiLogInCircle,
             },
             {
                 title: "Sign Out",
                 path: "/dashboard/signOut",
-               icons: TbLogin,
+                icons: TbLogin,
             },
         ]
     },
@@ -208,35 +203,35 @@ export const SidebarData = [
         id: 13,
         title: "Modal Example",
         path: "/dashboard/modalExample",
-       icons: CgShapeSquare,
+        icons: CgShapeSquare,
     },
     {
         id: 14,
         title: "Charts",
         path: "#",
-       icons: BsFillPieChartFill,
+        icons: BsFillPieChartFill,
         openIcon: RiArrowDownSFill,
         closeIcon: RiArrowUpSFill,
         subNav: [
             {
                 title: "Apex",
                 path: "/dashboard/apex",
-               icons: CgShapeCircle,
+                icons: CgShapeCircle,
             },
             {
                 title: "Lotto",
                 path: "/dashboard/lotto",
-               icons: CgShapeCircle,
+                icons: CgShapeCircle,
             },
             {
                 title: "charts js",
                 path: "/dashboard/chartsjs",
-               icons: BiChart,
+                icons: BiChart,
             },
             {
                 title: "Recharts",
                 path: "/dashboard/recharts",
-               icons: MdSsidChart,
+                icons: MdSsidChart,
             },
         ]
     },

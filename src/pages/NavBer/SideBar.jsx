@@ -14,7 +14,7 @@ const SideBar = () => {
     const sidebarData = SidebarData;
 
     return (
-        <div className={`bg-slate-800 md:block hidden fixed w-80 bg-sideColor left-0 top-0 bottom-0 overflow-y-auto px-4 `}>
+        <div className={`myScroll bg-slate-800 md:block hidden fixed w-80 left-0 top-0 bottom-0 overflow-y-auto px-4 pb-4`}>
             <Logo />
             {/* <ul className="pt-5">
                 <button onClick={() => setIsOpen(!isOpen)}>
@@ -34,7 +34,7 @@ const SideBar = () => {
                     </div>
                 </button>
             </ul> */}
-            <div className="w-full">
+            <div className="w-full space-y-2">
                 {
                     sidebarData.map((items) => <SubMenu
                         item={items}
