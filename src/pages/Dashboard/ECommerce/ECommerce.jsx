@@ -10,6 +10,8 @@ import { } from './../../../AllChartData'
 import ReactApexChart from "react-apexcharts";
 import { useState } from "react";
 import OrderProfitChart from "./OrderProfitChart";
+import Revenue from "./Revenue";
+import RightRevenue from "./RightRevenue";
 
 
 
@@ -85,11 +87,11 @@ const ECommerce = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-8">
                 <OrderProfitChart />
-                
-                <div className="md:col-span-2 shadow-xl rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-3">
 
+                <div className={`${isDarkMode ? 'bg-slate-800' : 'bg-white'} md:col-span-2 shadow-xl rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-3`}>
+                    <Revenue />
+                    <RightRevenue />
                 </div>
-
             </div>
         </section>
     );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Theme from '../../Shared/Theme';
-import { orderBarChart, profitLineChart } from '../../../AllChartData';
+import { earningPieChart, orderBarChart, profitLineChart } from '../../../AllChartData';
 import ReactApexChart from 'react-apexcharts';
 
 const OrderProfitChart = () => {
@@ -8,6 +8,7 @@ const OrderProfitChart = () => {
 
     const [bar] = useState(orderBarChart);
     const [line] = useState(profitLineChart);
+    const [donut] = useState(earningPieChart);
     return (
         <div className="grid grid-cols-2  text-accent md:grid-cols-4 gap-5">
             <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} md:col-span-2 pt-8 pl-6 shadow-lg rounded-xl `}>
@@ -24,22 +25,16 @@ const OrderProfitChart = () => {
                     <ReactApexChart options={line.options} series={line.series} type="line" height={108} width={'100%'} />
                 </div>
             </div>
-            <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} col-span-4 pt-8 pl-6  grid grid-cols-2 shadow-2xl rounded-xl `}>
-                {/* <div className="col-span-2 pt-8 pl-8 shadow-lg rounded-xl">
-                    <p className="font-medium text-2xl">Orders</p>
-                    <h2 className="font-semibold text-4xl my-3">3,30k</h2>
-                    <div className="-ml-6 -mt-3 mr-8">
-                        <ReactApexChart options={bar.options} series={bar.series} type="bar" height={108} width={'100%'} />
-                    </div>
-                </div> */}
+            <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} col-span-4 py-4 pl-6  grid grid-cols-2 shadow-2xl rounded-xl `}>
                 <div className='left'>
-                    <h2></h2>
-                    <p></p>
-                    <h2></h2>
-                    <p></p>
+                    <h2 className='text-2xl font-semibold pb-3'>Earnings</h2>
+                    <p className='text-lg font-medium leading-none'>This Month</p>
+                    <h2 className='text-base font-medium pb-3'>$5712.27</h2>
+                    <p className='text-lg font-bold leading-none'>75.5% <span className='text-sm font-normal text-justify leading-none  lowercase'> more earnings than last three months</span>
+                    </p>
                 </div>
-                <div className='right'>
-
+                <div className='right pt-5'>
+                    <ReactApexChart options={donut.options} series={donut.series} type="donut" />
                 </div>
             </div>
         </div>
