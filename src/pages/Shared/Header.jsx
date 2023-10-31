@@ -13,7 +13,7 @@ const Header = () => {
     const [isOpenBer, seIsOpenBer] = useState(false);
 
     return (
-        <header className={`${isDarkMode ? 'bg-white/5' : 'bg-background'} bg-background text-accent w-full py-4 px-3 flex items-center justify-between gap-5 shadow-xl rounded-md sticky top-0 z-50`}>
+        <header className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} text-accent w-full py-4 px-3 flex items-center justify-between gap-5 shadow-xl rounded-md sticky top-0 z-50`}>
             {/* header left side */}
             <div className="md:flex items-center gap-3 md:block hidden">
                 <Link to="#">
