@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { budgetDashesLineChart } from "../../../AllChartData";
 import { IoMdArrowDropdown } from "react-icons/io";
 import ReactApexChart from "react-apexcharts";
+import { Link } from "react-router-dom";
 
 const RightRevenue = () => {
     const [deashLine, setDeashLine] = useState({ series: budgetDashesLineChart.series1, options: budgetDashesLineChart.options });
@@ -61,7 +62,9 @@ const RightRevenue = () => {
             <div>
                 <ReactApexChart options={deashLine.options} series={deashLine.series} type="line" height={125} width={'100%'} />
             </div>
-            <button className=" mt-6 w-full py-3 rounded-xl text-white text-lg bg-blue-600 font-semibold shadow-md hover:shadow-blue-500 transition-all duration-200 capitalize">increase budget</button>
+            <Link to="">
+                <button className=" mt-6 w-full py-3 rounded-xl text-white text-lg bg-blue-600 font-semibold shadow-md hover:shadow-blue-500 transition-all duration-200 capitalize">increase budget</button>
+            </Link>
         </div>
     );
 };

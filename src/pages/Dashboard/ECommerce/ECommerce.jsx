@@ -7,11 +7,10 @@ import { AiOutlineCodeSandbox, AiOutlineCreditCard } from "react-icons/ai";
 import { IoLogoUsd } from "react-icons/io";
 import { TbArrowsTransferUp } from "react-icons/tb";
 import { } from './../../../AllChartData'
-import ReactApexChart from "react-apexcharts";
-import { useState } from "react";
 import OrderProfitChart from "./OrderProfitChart";
 import Revenue from "./Revenue";
 import RightRevenue from "./RightRevenue";
+import Table from "./Table/Table";
 
 
 
@@ -91,6 +90,15 @@ const ECommerce = () => {
                 <div className={`${isDarkMode ? 'bg-slate-800' : 'bg-white'} md:col-span-2 shadow-xl rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-3`}>
                     <Revenue />
                     <RightRevenue />
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+                <div className={`${isDarkMode ? 'bg-slate-800' : 'bg-white'} md:col-span-2 rounded-lg shadow-lg overflow-x-scroll myScroll`}>
+                    <Table />
+                </div>
+                <div className={`${isDarkMode ? 'bg-slate-800' : 'bg-white'} md:col-span-1 rounded-lg shadow-lg`}>
+
                 </div>
             </div>
         </section>
