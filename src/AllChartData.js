@@ -210,7 +210,7 @@ const earningPieChart = {
 
 const revenueDoubleBarChart = {
   series: [{
-    data: [ 260, 90, 130, 145, 210, 150, 220, 160]
+    data: [260, 90, 130, 145, 210, 150, 220, 160]
   },
   {
     data: [-70, -110, -110, -165, -50, -90, -100, -60]
@@ -305,5 +305,71 @@ const revenueDoubleBarChart = {
   }
 }
 
+const budgetDashesLineChart = {
+  series1: [{
+    name: "Session Duration",
+    data: [23, 20, 25, 22, 23, 19, 26, 22, 21.6, 18, 23]
+  },
+  {
+    name: "Page Views",
+    data: [17, 14, 19, 16, 17, 13, 20, 14, 14.8, 12, 17]
+  },
+  ],
+  series2: [{
+    data: [14, 16, 18, 16, 15, 18, 17, 19, 16]
+  },
+  {
+    data: [11, 13, 15, 13, 12, 15, 14, 16, 13]
+  }
+  ],
+  series3: [{
+    data: [20, 22, 25, 23, 24, 21, 22, 20, 22]
+  },
+  {
+    data: [16, 18, 21, 19, 20, 17, 18, 16, 18]
+  }
+  ],
+  options: {
+    colors: ['#2563eb', '#d8d8d8'],
+    chart: {
+      type: 'line',
+      zoom: {
+        enabled: false
+      },
+      toolbar: {
+        show: false
+      },
+    },
+    dataLabels: {
+      enabled: false
+    },
+    stroke: {
+      width: [2, 1.2],
+      curve: 'smooth',
+      dashArray: [0, 5]
+    },
+    xaxis: {
+      labels: {
+        show: false
+      },
+      axisBorder: {
+        show: false
+      }
+    },
+    yaxis: {
+      show: false,
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      enabled: false,
+    },
+    grid: {
+      show: false,
+    }
+  },
 
-export { orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart }
+}
+
+export { orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart, budgetDashesLineChart }
