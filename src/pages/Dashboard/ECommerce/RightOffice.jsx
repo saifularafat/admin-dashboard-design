@@ -2,6 +2,7 @@ import { FaBook } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import officeImage from "./../../../assets/office.png"
+import { Tooltip } from "react-tooltip";
 import user4 from "./../../../assets/pic1.png"
 import user3 from "./../../../assets/pic2.png"
 import user2 from "./../../../assets/pic3.png"
@@ -56,13 +57,14 @@ const RightOffice = () => {
                 </div>
             </div>
             {/* Four and image */}
-            <div className="flex items-center mt-12 pl-9">
+            <div className="flex items-center mt-12 pl-9 pb-4">
                 <div className="images flex">
-                    <img src={user1} alt="user image" className="images_style" />
-                    <img src={user2} alt="user image" className="images_style" />
-                    <img src={user3} alt="user image" className="images_style" />
-                    <img src={user1} alt="user image" className="images_style" />
-                    <img src={user4} alt="user image" className="images_style" />
+                    <Tooltip id="my-tooltip" place="bottom" />
+                    <img src={user1} alt="user image" className="images_style" data-tooltip-id="my-tooltip" data-tooltip-content="Saiful" />
+                    <img src={user2} alt="user image" className="images_style" data-tooltip-id="my-tooltip" data-tooltip-content="Nil world" />
+                    <img src={user3} alt="user image" className="images_style" data-tooltip-id="my-tooltip" data-tooltip-content="Top Mode" />
+                    <img src={user1} alt="user image" className="images_style" data-tooltip-id="my-tooltip" data-tooltip-content="sam curran" />
+                    <img src={user4} alt="user image" className="images_style" data-tooltip-id="my-tooltip" data-tooltip-content="Alu Carting" />
                 </div>
                 <p className="text-accent font-normal tracking-wider pl-2">+76</p>
             </div>

@@ -20,6 +20,7 @@ const ECommerce = () => {
 
     return (
         <section>
+            {/* Section one */}
             <div className="grid grid-cols-1 md:grid-cols-6 gap-5 my-8">
                 {/* view salary */}
                 <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'}  col-span-2 flex w-full text-accent shadow-2xl p-4 overflow-hidden rounded-xl `}>
@@ -84,7 +85,7 @@ const ECommerce = () => {
                     </div>
                 </div>
             </div>
-
+            {/* Section Two */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-8">
                 <OrderProfitChart />
 
@@ -93,13 +94,25 @@ const ECommerce = () => {
                     <RightRevenue />
                 </div>
             </div>
-
+            {/* Section three */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
                 <div className={`${isDarkMode ? 'bg-slate-800' : 'bg-white'} md:col-span-2 rounded-lg shadow-lg overflow-x-scroll myScroll`}>
                     <Table />
                 </div>
                 <div className={`${isDarkMode ? 'bg-slate-800' : 'bg-white'} md:col-span-1 rounded-lg shadow-lg overflow-hidden`}>
                     <RightOffice />
+                </div>
+            </div>
+            {/* Section Four */}
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-3">
+                <div className="col-span-2">
+
+                </div>
+                <div className="col-span-2">
+
+                </div>
+                <div className="col-span-2">
+
                 </div>
             </div>
         </section>
