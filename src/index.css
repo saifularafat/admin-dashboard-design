@@ -39,6 +39,11 @@ body {
 .dth__style {
   @apply normal-case py-4 px-11 text-xl font-semibold;
 }
+.images_style{
+  @apply w-10 h-10 rounded-full border-2 border-solid border-slate-500 
+  -ml-3 duration-200 transition-all ease-out cursor-pointer hover:-mt-1 
+  hover:scale-110
+}
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */
