@@ -418,4 +418,55 @@ const browserRadialBarChart = {
   },
 }
 
-export { orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart, budgetDashesLineChart, browserRadialBarChart }
+const globalAngleChart = {
+  series: [89],
+  options: {
+    stroke: {
+      lineCap: "round"
+    }, 
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "dark",
+        type: "vertical",
+        gradientToColors: ["#df3636", "#ee7a7a"],
+        stops: [0, 100]
+      }
+    },
+    chart: {
+      type: 'radialBar',
+    },
+    plotOptions: {
+      radialBar: {
+        track:{
+          background: '#ebebeb',
+          strokeWidth: '55%',
+        },
+        offsetY: 0,
+        startAngle: -155,
+        endAngle: 155,
+        hollow: {
+          margin: 10,
+          size: '75%',
+          background: 'transparent',
+          image: undefined,
+        },
+        dataLabels: {
+          name: {
+            show: false,
+          },
+          value: {
+            show:true,
+            fontSize: '34px',
+            fontFamily: 'Montserrat, sans-serif',
+            fontWeight: 500,
+            color: "#6b6b6b",
+          }
+        }
+      }
+    },
+    colors: ['#ee7a7a'],
+  },
+}
+
+export { orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart, budgetDashesLineChart, browserRadialBarChart, globalAngleChart }
