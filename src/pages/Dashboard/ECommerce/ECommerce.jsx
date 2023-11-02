@@ -6,14 +6,17 @@ import { FiUser } from "react-icons/fi";
 import { AiOutlineCodeSandbox, AiOutlineCreditCard } from "react-icons/ai";
 import { IoLogoUsd } from "react-icons/io";
 import { TbArrowsTransferUp } from "react-icons/tb";
-import { } from './../../../AllChartData'
+import { browserRadialBarChart } from './../../../AllChartData'
 import OrderProfitChart from "./OrderProfitChart";
 import Revenue from "./Revenue";
 import RightRevenue from "./RightRevenue";
 import Table from "./Table/Table";
 import RightOffice from "./RightOffice";
+import { BiDotsVertical } from "react-icons/bi";
+import BrowserCart from "./BrowserCart";
 
-
+import google from '../../../assets/social/google.png'
+import chrome from '../../../assets/social/chrome.png'
 
 const ECommerce = () => {
     const { isDarkMode } = Theme();
@@ -105,13 +108,22 @@ const ECommerce = () => {
             </div>
             {/* Section Four */}
             <div className="grid grid-cols-1 md:grid-cols-6 gap-4 my-3">
-                <div className="col-span-2">
+                <div className={`${isDarkMode ? "bg-slate-800" : "bg-white"} text-accent col-span-2 py-4 px-2 shadow-xl rounded-lg overflow-hidden`}>
+                    <div className="flex items-center justify-between">
+                        <div>
+                            <h3 className="text-lg font-medium text-accent leading-none">Browser States</h3>
+                            <p className="text-sm font-normal normal-case text-accent">Counter January 2022</p>
+                        </div>
+                        <BiDotsVertical className="text-lg" />
+                    </div>
+                    <div className="pt-5">
+                       <BrowserCart image={google} title="Google" percent="52.9%" settings={{series: browserRadialBarChart.series1, options: {...browserRadialBarChart.options, colors: browserRadialBarChart.options.colors1}}} />
+                    </div>
+                </div>
+                <div className={`${isDarkMode ? "bg-slate-800" : "bg-white"} text-accent col-span-2 py-4 px-2 shadow-xl rounded-lg`}>
 
                 </div>
-                <div className="col-span-2">
-
-                </div>
-                <div className="col-span-2">
+                <div className={`${isDarkMode ? "bg-slate-800" : "bg-white"} text-accent col-span-2 py-4 px-2 shadow-xl rounded-lg`}>
 
                 </div>
             </div>

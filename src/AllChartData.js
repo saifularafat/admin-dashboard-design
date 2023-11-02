@@ -369,7 +369,53 @@ const budgetDashesLineChart = {
       show: false,
     }
   },
-
 }
 
-export { orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart, budgetDashesLineChart }
+const browserRadialBarChart = {
+  series1: [54],
+  series2: [8.6],
+  series3: [25.7],
+  series4: [6.8],
+  series5: [13.5],
+
+  options: {
+    colors1: ['#e44444'],
+    colors2: ['#64e444'],
+    colors3: ['#4477e4'],
+    colors4: ['#b144e4'],
+    colors5: ['#d9e444'],
+    stroke: {
+      lineCap: "round"
+    },
+    grid: {
+      padding: {
+        top: -15,
+        bottom: -15
+      }
+    },
+    chart: {
+      height: 250,
+      type: 'radialBar',
+    },
+    plotOptions: {
+      radialBar: {
+        track: {
+          background: '#ebebeb',
+        },
+        hollow: {
+          size: '23%'
+        },
+        dataLabels: {
+          name: {
+            show: false,
+          },
+          value: {
+            show: false,
+          }
+        }
+      },
+    },
+  },
+}
+
+export { orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart, budgetDashesLineChart, browserRadialBarChart }
