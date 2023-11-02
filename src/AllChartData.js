@@ -372,18 +372,18 @@ const budgetDashesLineChart = {
 }
 
 const browserRadialBarChart = {
-  series1: [54],
-  series2: [8.6],
-  series3: [25.7],
-  series4: [6.8],
-  series5: [13.5],
+  series1: [51],
+  series2: [17.3],
+  series3: [12.4],
+  series4: [11.2],
+  series5: [8.1],
 
   options: {
     colors1: ['#e44444'],
-    colors2: ['#64e444'],
-    colors3: ['#4477e4'],
-    colors4: ['#b144e4'],
-    colors5: ['#d9e444'],
+    colors2: ['#9453F8'],
+    colors3: ['#2299F8'],
+    colors4: ['#E53333'],
+    colors5: ['#00BBF5'],
     stroke: {
       lineCap: "round"
     },
