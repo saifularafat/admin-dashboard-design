@@ -13,14 +13,15 @@ import RightRevenue from "./RightRevenue";
 import Table from "./Table/Table";
 import RightOffice from "./RightOffice";
 import { BiDotsVertical } from "react-icons/bi";
-import BrowserCart from "./BrowserCart";
+import BrowserCart from "./FourthSection/BrowserCart";
 
 import chrome from '../../../assets/social/chrome.png'
 import firefox from '../../../assets/social/firefox.png'
 import safari from '../../../assets/social/safari.png'
 import mini from '../../../assets/social/mini.png'
 import explorer from '../../../assets/social/explorer.png'
-import GlobalChart from "./GlobalChart";
+import GlobalChart from "./FourthSection/GlobalChart";
+import Transactions from "./FourthSection/Transactions";
 
 const ECommerce = () => {
     const { isDarkMode } = Theme();
@@ -132,7 +133,7 @@ const ECommerce = () => {
                     <GlobalChart />
                 </div>
                 <div className={`${isDarkMode ? "bg-slate-800" : "bg-white"} text-accent col-span-2 py-5 px-3 shadow-xl rounded-lg`}>
-
+                    <Transactions />
                 </div>
             </div>
         </section>

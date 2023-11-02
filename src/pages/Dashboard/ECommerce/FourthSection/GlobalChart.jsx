@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { globalAngleChart } from "../../../AllChartData";
+import { globalAngleChart } from "../../../../AllChartData";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import ReactApexChart from "react-apexcharts";
 

@@ -8,6 +8,7 @@ import { TbMeat } from 'react-icons/tb';
 import { FaBook, FaBottleWater } from 'react-icons/fa6';
 import { MdSportsScore } from 'react-icons/md';
 import { SiStartrek } from 'react-icons/si';
+import { FcInTransit } from 'react-icons/fc';
 import { PiCarProfileLight, PiCarProfileThin } from 'react-icons/pi';
 import Views from "./Views";
 import Revenue from "./Revenue";
@@ -34,7 +35,7 @@ const Table = () => {
                 </tr>
                 <tr className="border border-solid border-b border-slate-300 font-semibold">
                     <td className="py-3 px-10"><Company name="Pere" desc="pere@gmail.com" icons={"🪂"} /></td>
-                    <td className="py-3 px-10"><Category Icon={LiaCarSideSolid} name="Grocery" bgColor="bg-slate-300" color="text-accent" /></td>
+                    <td className="py-3 px-10"><Category Icon={FcInTransit} name="Grocery" bgColor="bg-slate-300" color="text-accent" /></td>
                     <td className="py-3 px-10"><Views money='38.3K' time="in 24 hours" /></td>
                     <td className="py-3 px-10"><Revenue amount="$437.5" /></td>
                     <td className="py-3 px-10"><Salas percent="45%" Icon={AiOutlineFall} color="text-red-500" /></td>
