@@ -22,6 +22,7 @@ import mini from '../../../assets/social/mini.png'
 import explorer from '../../../assets/social/explorer.png'
 import GlobalChart from "./FourthSection/GlobalChart";
 import Transactions from "./FourthSection/Transactions";
+import Footer from "../../Shared/Footer";
 
 const ECommerce = () => {
     const { isDarkMode } = Theme();
@@ -136,6 +137,8 @@ const ECommerce = () => {
                     <Transactions />
                 </div>
             </div>
+
+            <Footer />
         </section>
     );
 };
