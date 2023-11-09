@@ -24,6 +24,7 @@
     "react-tooltip": "^5.21.6",
     "sort-by": "^1.2.0",
     "styled-components": "^6.1.0",
+    "swiper": "^11.0.4",
     "tailwind-scrollbar": "^3.0.5"
   },
   "devDependencies": {

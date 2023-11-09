@@ -30,14 +30,6 @@ const GlobalChart = () => {
                     <p className="font-medium text-sm">In Progress</p>
                     <h3 className="font-semibold text-xl">210,363</h3>
                 </div>
-                {/* <div className="completed w-1/2 py-6 border-0 border-r border-solid border-gray-200 text-center">
-                    <p className="text-gray-400 font-medium text-xl tracking-wider">Completed</p>
-                    <h2 className="text-gray-600 font-semibold text-3xl">734,484</h2>
-                </div>
-                <div className="progress w-1/2 py-6 text-center">
-                    <p className="text-gray-400 font-medium text-xl tracking-wider">in progress</p>
-                    <h2 className="text-gray-600 font-semibold text-3xl">135,483</h2>
-                </div> */}
             </div>
         </>
     );
