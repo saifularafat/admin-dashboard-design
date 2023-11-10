@@ -4,11 +4,12 @@ import { BiLogIn, BiMessage, BiSun } from "react-icons/bi";
 import { FaMoon } from "react-icons/fa6";
 import { MdNotificationAdd } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Theme from "./Theme";
+// import Theme from "./Theme";
 import { useState } from "react";
+import useTheme from "./useTheme";
 
 const Header = () => {
-    const { isDarkMode, toggleIsDarkAndSunMode } = Theme();
+    const { isDarkMode, toggleIsDarkAndSunMode } = useTheme();
 
     const [isOpenBer, seIsOpenBer] = useState(false);
 

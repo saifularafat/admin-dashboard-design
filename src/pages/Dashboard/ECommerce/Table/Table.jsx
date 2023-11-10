@@ -1,4 +1,4 @@
-import Theme from "../../../Shared/Theme";
+// import Theme from "../../../Shared/useTheme";
 import Category from "./Category";
 import Company from "./Company";
 import { RiComputerLine, RiLuggageCartFill } from 'react-icons/ri';
@@ -13,9 +13,10 @@ import { PiCarProfileLight, PiCarProfileThin } from 'react-icons/pi';
 import Views from "./Views";
 import Revenue from "./Revenue";
 import Salas from "./Salas";
+import useTheme from "../../../Shared/useTheme";
 
 const Table = () => {
-    const { isDarkMode } = Theme();
+    const { isDarkMode } = useTheme();
     return (
         <table className="min-w-[800px] w-full">
             <thead className={`${isDarkMode ? 'bg-slate-900' : 'bg-slate-500 text-gray-300'}`}>

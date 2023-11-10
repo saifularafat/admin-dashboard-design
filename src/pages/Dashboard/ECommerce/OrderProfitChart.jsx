@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Theme from '../../Shared/Theme';
+import Theme from '../../Shared/useTheme';
 import { earningPieChart, orderBarChart, profitLineChart } from '../../../AllChartData';
 import ReactApexChart from 'react-apexcharts';
 

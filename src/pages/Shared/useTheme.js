@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
-const Theme = () => {
+const useTheme = () => {
     const dark = localStorage.getItem('customDarkTheme')
     const [isDarkMode, setIsDarkMode] = useState(dark == 'true' ? true : false);
+    console.log(dark, 'IsDArk ', isDarkMode);
 
     useEffect(() => {
+        // const dark = localStorage.getItem('customDarkTheme')
         if (isDarkMode == true) {
             localStorage.removeItem('customDarkTheme')
             localStorage.setItem('customDarkTheme', 'true')
@@ -25,4 +27,4 @@ const Theme = () => {
     
     return { isDarkMode, setIsDarkMode, toggleIsDarkAndSunMode };
 };
-export default Theme
+export default useTheme

@@ -469,48 +469,46 @@ const globalAngleChart = {
   },
 }
 
-// const revenueGeneratedAreaChart = {
-//   series: [{
-//     name: "STOCK ABC",
-//     data: series.monthDataSeries1.prices
-//   }],
-//   options: {
-//     chart: {
-//       type: 'area',
-//       height: 350,
-//       zoom: {
-//         enabled: false
-//       }
-//     },
-//     dataLabels: {
-//       enabled: false
-//     },
-//     stroke: {
-//       curve: 'straight'
-//     },
+const revenueGeneratedAreaChart = {
+  seriesSpark3: [{
+    data: [2,6, 9, 5,  6, 11]
+  }],
+  optionsSpark3: {
+    chart: {
+      type: 'area',
+      height: 160,
+      sparkline: {
+        enabled: true
+      },
+    },
+    stroke: {
+      curve: 'straight'
+    },
+    fill: {
+      opacity: 0.3
+    },
+    xaxis: {
+      crosshairs: {
+        width: 1
+      },
+    },
+    yaxis: {
+      min: 0
+    },
+    title: {
+      style: {
+        fontSize: '24px',
+      }
+    },
+    subtitle: {
+      style: {
+        fontSize: '14px',
+      }
+    }
+  },
+};
 
-//     title: {
-//       text: 'Fundamental Analysis of Stocks',
-//       align: 'left'
-//     },
-//     subtitle: {
-//       text: 'Price Movements',
-//       align: 'left'
-//     },
-//     labels: series.monthDataSeries1.dates,
-//     xaxis: {
-//       type: 'datetime',
-//     },
-//     yaxis: {
-//       opposite: true
-//     },
-//     legend: {
-//       horizontalAlign: 'left'
-//     }
-//   },
-
-// };
-
-export { orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart, budgetDashesLineChart, browserRadialBarChart, globalAngleChart, 
-  // revenueGeneratedAreaChart 
+export {
+  orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart, budgetDashesLineChart, browserRadialBarChart, globalAngleChart,
+  revenueGeneratedAreaChart
 }

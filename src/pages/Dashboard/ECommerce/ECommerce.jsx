@@ -1,4 +1,4 @@
-import Theme from "../../Shared/Theme";
+// import Theme from "../../Shared/useTheme";
 import medal from "../../../assets/medal.png"
 import { Link } from "react-router-dom";
 import { FaChartLine } from "react-icons/fa";
@@ -23,9 +23,11 @@ import explorer from '../../../assets/social/explorer.png'
 import GlobalChart from "./FourthSection/GlobalChart";
 import Transactions from "./FourthSection/Transactions";
 import Footer from "../../Shared/Footer";
+import useTheme from "../../Shared/useTheme";
 
 const ECommerce = () => {
-    const { isDarkMode } = Theme();
+    const { isDarkMode } = useTheme();
+    console.log(isDarkMode);
 
     return (
         <section>

@@ -1,14 +1,14 @@
 import { AiOutlineLink, AiOutlineShoppingCart } from "react-icons/ai";
-import Theme from "../../Shared/Theme";
+import Theme from "../../Shared/useTheme";
 import SwiperAnaly from "./SwiperAnaly";
 import { MdPayment } from "react-icons/md";
-// import ReactApexChart from "react-apexcharts";
-// import { useState } from "react";
-// import { revenueGeneratedAreaChart } from "../../../AllChartData";
+import ReactApexChart from "react-apexcharts";
+import { useState } from "react";
+import { revenueGeneratedAreaChart } from "../../../AllChartData";
 
 const FirstSection = () => {
     const { isDarkMode } = Theme();
-    // const [area] = useState(revenueGeneratedAreaChart)
+    const [area] = useState(revenueGeneratedAreaChart)
     return (
         <div className="grid grid-cols-1 md:grid-cols-4 gap-5 py-7">
             <div className={`col-span-2 w-full text-accent shadow-2xl overflow-hidden rounded-xl`}>
@@ -50,9 +50,9 @@ const FirstSection = () => {
                 </div>
                 <h4 className="text-xl font-semibold pt-2">93.7%</h4>
                 <p className="text-sm text-slate-400">Revenue Generated</p>
-                {/* <div>
-                    <ReactApexChart options={area.options} series={area.series} type="area" height={350} />
-                </div> */}
+                <div>
+                    <ReactApexChart options={area.optionsSpark3} series={area.seriesSpark3} type="area" height={160} />
+                </div>
             </div>
         </div>
     );

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import Theme from "../Shared/Theme";
+// import Theme from "../Shared/Theme";
 import error from "../../assets/animation/error.json"
 import Lottie from "lottie-react";
+import useTheme from "../Shared/useTheme";
 const Error = () => {
-    const { isDarkMode } = Theme();
+    const { isDarkMode } = useTheme();
     return (
         <div className={`${isDarkMode ? 'bg-slate-800' : 'bg-blue-100 text-slate-800'}  h-screen overflow-hidden flex items-center justify-center text-accent pt-9`}>
             <div>
