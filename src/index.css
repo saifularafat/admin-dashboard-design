@@ -50,6 +50,9 @@ body {
 .hideScrollBar::-webkit-scrollbar {
   display: none;
 }
+.apexcharts-toolbar{
+  display: none !important;
+}
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hideScrollBar {

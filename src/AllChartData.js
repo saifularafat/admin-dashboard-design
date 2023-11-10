@@ -471,7 +471,7 @@ const globalAngleChart = {
 
 const revenueGeneratedAreaChart = {
   seriesSpark3: [{
-    data: [2,6, 9, 5,  6, 11]
+    data: [2, 5, 2, 6, 9, 5, 9, 11]
   }],
   optionsSpark3: {
     chart: {
@@ -485,30 +485,51 @@ const revenueGeneratedAreaChart = {
       curve: 'straight'
     },
     fill: {
-      opacity: 0.3
+      opacity: 0.1
     },
     xaxis: {
       crosshairs: {
-        width: 1
+        width: 0
       },
     },
     yaxis: {
       min: 0
     },
-    title: {
-      style: {
-        fontSize: '24px',
+  },
+};
+
+const earningReportBarChart = {
+  series: [{
+    data: [5, 7, 4, 10, 7, 6, 3]
+  }],
+  options: {
+    chart: {
+      type: 'bar',
+      height: 350
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 4,
       }
     },
-    subtitle: {
-      style: {
-        fontSize: '14px',
-      }
+    dataLabels: {
+      enabled: false
+    },
+    xaxis: {
+      categories: ['Fr', 'Sa', 'Su', 'Mo', 'Tu', 'Wn', 'Th'
+      ],
     }
   },
 };
 
 export {
-  orderBarChart, profitLineChart, earningPieChart, revenueDoubleBarChart, budgetDashesLineChart, browserRadialBarChart, globalAngleChart,
-  revenueGeneratedAreaChart
+  orderBarChart,
+  profitLineChart,
+  earningPieChart,
+  revenueDoubleBarChart,
+  budgetDashesLineChart,
+  browserRadialBarChart,
+  globalAngleChart,
+  revenueGeneratedAreaChart,
+  earningReportBarChart
 }

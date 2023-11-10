@@ -1,10 +1,11 @@
 import FirstSection from "./FirstSection";
+import SecondSection from "./SecondSection";
 
 const Analytics = () => {
     return (
         <div className="">
-            {/* first section  */}
             <FirstSection />
+            <SecondSection />
         </div>
     );
 };
