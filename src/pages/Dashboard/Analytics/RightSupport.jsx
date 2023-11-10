@@ -2,9 +2,13 @@ import { BsThreeDotsVertical, BsTicketPerforated } from "react-icons/bs";
 import useTheme from "../../Shared/useTheme";
 import { HiOutlineClock } from "react-icons/hi";
 import { CiClock2 } from "react-icons/ci";
+import ReactApexChart from "react-apexcharts";
+import { useState } from "react";
+import { supportTicketRadialBar } from "../../../AllChartData";
 
 const RightSupport = () => {
     const { isDarkMode } = useTheme()
+    const [radialBar] = useState(supportTicketRadialBar);
     return (
         <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} text-accent shadow-2xl p-5 overflow-hidden rounded-xl`}>
             <div className="flex items-center justify-between ">
@@ -54,7 +58,7 @@ const RightSupport = () => {
                     </div>
                 </div>
                 <div className="col-span-3">
-
+                    <ReactApexChart options={radialBar.options} series={radialBar.series} type="radialBar" height={340} />
                 </div>
             </div>
         </div>
