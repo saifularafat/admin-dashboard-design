@@ -44,6 +44,12 @@ body {
   -ml-3 duration-200 transition-all ease-out cursor-pointer hover:-mt-1 
   hover:scale-110
 }
+/* Site Button Style */
+.siteBTN{
+  @apply text-sm text-center inline-block hover:bg-slate-300 
+  hover:text-success w-full px-[6px] py-1 font-medium capitalize 
+  rounded-t-lg transition-all duration-200
+}
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */

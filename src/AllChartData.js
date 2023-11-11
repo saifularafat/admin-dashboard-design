@@ -523,7 +523,6 @@ const earningReportBarChart = {
 };
 
 const supportTicketRadialBar = {
-
   series: [87],
   options: {
     chart: {
