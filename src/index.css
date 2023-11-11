@@ -46,7 +46,7 @@ body {
 }
 /* Site Button Style */
 .siteBTN{
-  @apply text-sm text-center inline-block hover:bg-slate-300 
+  @apply text-sm inline-block hover:bg-slate-300 
   hover:text-success w-full px-[6px] py-1 font-medium capitalize 
   rounded-t-lg transition-all duration-200
 }

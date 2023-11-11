@@ -6,21 +6,29 @@ import { LiaCcPaypal } from "react-icons/lia";
 import ReactApexChart from "react-apexcharts";
 import { useState } from "react";
 import { earningReportBarChart } from "../../../AllChartData";
+import ShowButtonInfo from "../../../components/ThreeDotButton/ShowButtonInfo";
 
 const LeftReport = () => {
+    const [showMenu, setShowMenu] = useState(false)
     const { isDarkMode } = useTheme();
     const [bar] = useState(earningReportBarChart)
     return (
         <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} text-accent shadow-2xl p-5 overflow-hidden rounded-xl`}>
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between relative">
                 <div>
                     <h3 className="text-lg font-semibold">Earning Reports</h3>
                     <p className="text-sm text-slate-400">Weekly Earnings Overview</p>
                 </div>
-                <div>
-                    <button>
-                        <BsThreeDotsVertical className="text-lg" />
+                <div className="">
+                    <button
+                        onClick={() => setShowMenu(!showMenu)}
+                        className="" >
+                        <BsThreeDotsVertical className="w-6 h-6 hover:bg-slate-300 hover:rounded-xl p-1 transition-all duration-200" />
                     </button>
+                    {
+                        !showMenu &&
+                        <ShowButtonInfo btnLink1='' title1="view More" btnLink2='' title2="Delete" XSite="left-3/4" YSite="top-9" />
+                    }
                 </div>
             </div>
             <div className="md:flex gap-6">
@@ -29,7 +37,7 @@ const LeftReport = () => {
                     <p className="text-xs text-slate-400 pt-6">You informed of this week <br /> compared to last week</p>
                 </div>
                 <div>
-                    <ReactApexChart options={bar.options} series={bar.series}  type="bar" height={180}/>
+                    <ReactApexChart options={bar.options} series={bar.series} type="bar" height={180} />
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 border-[2px] border-solid border-slate-300 rounded-lg p-3 overflow-hidden">

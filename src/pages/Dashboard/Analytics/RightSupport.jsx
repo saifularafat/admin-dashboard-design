@@ -5,21 +5,29 @@ import { CiClock2 } from "react-icons/ci";
 import ReactApexChart from "react-apexcharts";
 import { useState } from "react";
 import { supportTicketRadialBar } from "../../../AllChartData";
+import ShowButtonInfo from "../../../components/ThreeDotButton/ShowButtonInfo";
 
 const RightSupport = () => {
+    const [showMenu, setShowMenu] = useState(false)
     const { isDarkMode } = useTheme()
     const [radialBar] = useState(supportTicketRadialBar);
     return (
         <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} text-accent shadow-2xl p-5 overflow-hidden rounded-xl`}>
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between relative">
                 <div>
                     <h3 className="text-lg font-semibold">Support Tracker</h3>
                     <p className="text-sm text-slate-400">Last 7 Days</p>
                 </div>
-                <div>
-                    <button>
-                        <BsThreeDotsVertical className="text-lg" />
+                <div className="">
+                    <button
+                        onClick={() => setShowMenu(!showMenu)}
+                        className="" >
+                        <BsThreeDotsVertical className="w-6 h-6 hover:bg-slate-300 hover:rounded-xl p-1 transition-all duration-200" />
                     </button>
+                    {
+                        !showMenu &&
+                        <ShowButtonInfo btnLink1='' title1="view More" btnLink2='' title2="Delete" XSite="left-3/4" YSite="top-9" />
+                    }
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-5 pt-6">
