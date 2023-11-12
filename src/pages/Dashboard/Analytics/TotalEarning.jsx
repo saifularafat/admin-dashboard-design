@@ -26,7 +26,7 @@ const TotalEarning = () => {
                             btnLink1='' title1="refresh"
                             btnLink2='' title2="Download"
                             title3="view All" btnLink3=""
-                            XSite="left-1/2" YSite="top-9" />
+                            XSite="left-2/3" YSite="top-12" />
                     }
                 </div>
             </div>
