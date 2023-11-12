@@ -3,10 +3,14 @@ import ShowButtonInfo from "../../../components/ThreeDotButton/ShowButtonInfo";
 import useTheme from "../../Shared/useTheme";
 import { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
+import ReactApexChart from "react-apexcharts";
+import { totalEarningDoubleBarChart } from "../../../AllChartData";
+import "./analytics.css"
 
 const TotalEarning = () => {
     const [showMenu, setShowMenu] = useState(false)
     const { isDarkMode } = useTheme();
+    const [doubleBar] = useState(totalEarningDoubleBarChart)
     return (
         <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} text-accent shadow-2xl p-5 overflow-hidden rounded-xl`}>
             <div className="flex items-center justify-between relative ">
@@ -35,6 +39,9 @@ const TotalEarning = () => {
                         <span className=" font-semibold">27.77%</span>
                     </div>
                 </div>
+            </div>
+            <div className="">
+            <ReactApexChart options={doubleBar.options} series={doubleBar.series} type="bar" height={270} width={'100%'} />
             </div>
         </div>
     );

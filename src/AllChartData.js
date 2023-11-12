@@ -569,6 +569,198 @@ const supportTicketRadialBar = {
   },
 };
 
+// const totalEarningDoubleBarChart = {
+//   series: [{
+//     data: [160, 90, 130, 145, 110, 150, 120, 140]
+//   },
+//   {
+//     data: [-70, -110, -110, -105, -50, -90, -100, -60]
+//   }
+//   ],
+//   options: {
+//     legend: {
+//       show: false,
+//     },
+//     chart: {
+//       type: 'bar',
+//       stacked: true,
+//       toolbar: {
+//         show: false
+//       }
+//     },
+//     colors: ['#2563eb', '#fb923c'],
+//     plotOptions: {
+//       bar: {
+//         borderRadius: [10, 10],
+//         columnWidth: '52%',
+//       },
+//     },
+//     dataLabels: {
+//       enabled: false
+//     },
+//     stroke: {
+//       width: 8,
+//       colors: ["#fff"]
+//     },
+
+//     grid: {
+//       show: false,
+//     },
+//     xaxis: {
+//       categories: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+//       axisBorder: {
+//         show: false
+//       },
+//       labels: {
+//         style: {
+//           colors: ['#6e6b7b'],
+//           fontSize: '12px',
+//           fontFamily: 'Montserrat, sans-serif',
+//           fontWeight: 400,
+//           cssClass: 'apexcharts-xaxis-label',
+//         }
+//       }
+//     },
+//     yaxis: {
+//       min: -200,
+//       max: 300,
+//       tickAmount: 5,
+//       labels: {
+//         formatter: function (y) {
+//           return y.toFixed(0);
+//         },
+//         style: {
+//           colors: ['#6e6b7b'],
+//           fontSize: '12px',
+//           fontFamily: 'Montserrat, sans-serif',
+//           fontWeight: 400,
+//           cssClass: 'apexcharts-xaxis-label',
+//         }
+//       }
+//     },
+//     tooltip: {
+//       enabled: false,
+//     },
+//     responsive: [
+//       {
+//         breakpoint: 500,
+//         options: {
+//           plotOptions: {
+//             bar: {
+//               columnWidth: '72%',
+//             },
+//           },
+//         }
+//       },
+//       {
+//         breakpoint: 360,
+//         options: {
+//           plotOptions: {
+//             bar: {
+//               columnWidth: '100%',
+//             },
+//           },
+//         }
+//       },
+//     ]
+//   }
+// }
+const totalEarningDoubleBarChart = {
+  series: [{
+    data: [260, 90, 130, 145, 210, 150, 220, 160]
+  },
+  {
+    data: [-70, -110, -110, -165, -50, -90, -100, -60]
+  }
+  ],
+  options: {
+    legend: {
+      show: false,
+    },
+    chart: {
+      type: 'bar',
+      stacked: true,
+      // toolbar: {
+      //   show: false
+      // }
+    },
+    colors: ['#2563eb', '#fb923c'],
+    plotOptions: {
+      bar: {
+        borderRadius: [20, 20],
+        columnWidth: '42%',
+      },
+    },
+    dataLabels: {
+      enabled: false
+    },
+    stroke: {
+      width: 8,
+    },
+
+    grid: {
+      show: false,
+    },
+    // xaxis: {
+    //   categories: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    //   axisBorder: {
+    //     show: false
+    //   },
+    //   labels: {
+    //     style: {
+    //       colors: ['#6e6b7b'],
+    //       fontSize: '12px',
+    //       fontFamily: 'Montserrat, sans-serif',
+    //       fontWeight: 400,
+    //       cssClass: 'apexcharts-xaxis-label',
+    //     }
+    //   }
+    // },
+    // yaxis: {
+    //   min: -200,
+    //   max: 300,
+    //   tickAmount: 5,
+    //   labels: {
+    //     formatter: function (y) {
+    //       return y.toFixed(0);
+    //     },
+    //     style: {
+    //       colors: ['#6e6b7b'],
+    //       fontSize: '12px',
+    //       fontFamily: 'Montserrat, sans-serif',
+    //       fontWeight: 400,
+    //       cssClass: 'apexcharts-xaxis-label',
+    //     }
+    //   }
+    // },
+    tooltip: {
+      enabled: false,
+    },
+    responsive: [
+      {
+        breakpoint: 500,
+        options: {
+          plotOptions: {
+            bar: {
+              columnWidth: '72%',
+            },
+          },
+        }
+      },
+      {
+        breakpoint: 360,
+        options: {
+          plotOptions: {
+            bar: {
+              columnWidth: '100%',
+            },
+          },
+        }
+      },
+    ]
+  }
+}
+
 export {
   orderBarChart,
   profitLineChart,
@@ -579,5 +771,6 @@ export {
   globalAngleChart,
   revenueGeneratedAreaChart,
   earningReportBarChart,
-  supportTicketRadialBar
+  supportTicketRadialBar,
+  totalEarningDoubleBarChart
 }
