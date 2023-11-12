@@ -681,7 +681,7 @@ const totalEarningDoubleBarChart = {
       type: 'bar',
       stacked: true,
     },
-    colors: ['#2563eb', '#fb923c'],
+    colors: ['#12FF98', '#8E7987'],
     plotOptions: {
       bar: {
         borderRadius: [20, 20],

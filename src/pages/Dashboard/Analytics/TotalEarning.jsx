@@ -5,15 +5,14 @@ import { useState } from "react";
 import { IoIosArrowUp, IoLogoUsd } from "react-icons/io";
 import ReactApexChart from "react-apexcharts";
 import { totalEarningDoubleBarChart } from "../../../AllChartData";
-import CountryInfo from "../../../components/CountryInfo";
 
 const TotalEarning = () => {
     const [showMenu, setShowMenu] = useState(false)
     const { isDarkMode } = useTheme();
     const [doubleBar] = useState(totalEarningDoubleBarChart)
     return (
-        <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} text-accent shadow-2xl p-5 overflow-hidden rounded-xl`}>
-            <div className="flex items-center justify-between relative ">
+        <div className={`${isDarkMode ? 'bg-slate-900' : 'bg-white'} text-accent shadow-2xl overflow-hidden rounded-xl`}>
+            <div className="flex items-center justify-between px-5 pt-6 relative ">
                 <h3 className="text-lg font-semibold">Total Earning</h3>
                 <div className="">
                     <button
@@ -31,8 +30,8 @@ const TotalEarning = () => {
                     }
                 </div>
             </div>
-            <div className="mt-6">
-                <div className="flex items-center gap-1 text-slate-800">
+            <div className="mt-6 px-5">
+                <div className="flex items-center gap-1">
                     <p className="text-3xl font-semibold tracking-wider">89%</p>
                     <div className="flex items-center gap-[1px] pl-2">
                         <IoIosArrowUp className="text-base font-semibold" />
@@ -40,10 +39,10 @@ const TotalEarning = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-2">
+            <div className="py-2 overflow-hidden">
                 <ReactApexChart options={doubleBar.options} series={doubleBar.series} type="bar" height={270} width={'100%'} />
             </div>
-            <div className="md:space-y-5 space-y-2 pb-2">
+            <div className="md:space-y-5 space-y-2 py-3 px-5">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <div className=" rounded-lg bg-blue-200 p-1">
