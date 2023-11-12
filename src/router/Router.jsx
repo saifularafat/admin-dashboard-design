@@ -3,6 +3,7 @@ import Main from "../Layout/Main";
 import ECommerce from "../pages/Dashboard/ECommerce/ECommerce";
 import Error from "../pages/Error/Error";
 import Analytics from "../pages/Dashboard/Analytics/Analytics";
+import Emails from "../pages/Dashboard/Emails/Emails";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/analytics",
         element: <Analytics />
+      },
+      {
+        path: "/dashboard/email",
+        element: <Emails />
       },
     ]
   },
