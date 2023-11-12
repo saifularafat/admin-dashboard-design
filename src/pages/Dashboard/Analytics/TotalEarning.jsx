@@ -2,10 +2,10 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import ShowButtonInfo from "../../../components/ThreeDotButton/ShowButtonInfo";
 import useTheme from "../../Shared/useTheme";
 import { useState } from "react";
-import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowUp, IoLogoUsd } from "react-icons/io";
 import ReactApexChart from "react-apexcharts";
 import { totalEarningDoubleBarChart } from "../../../AllChartData";
-import "./analytics.css"
+import CountryInfo from "../../../components/CountryInfo";
 
 const TotalEarning = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -40,8 +40,34 @@ const TotalEarning = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
-            <ReactApexChart options={doubleBar.options} series={doubleBar.series} type="bar" height={270} width={'100%'} />
+            <div className="py-2">
+                <ReactApexChart options={doubleBar.options} series={doubleBar.series} type="bar" height={270} width={'100%'} />
+            </div>
+            <div className="md:space-y-5 space-y-2 pb-2">
+                <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <div className=" rounded-lg bg-blue-200 p-1">
+                            <IoLogoUsd className="text-2xl text-blue-700"/>
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-semibold leading-none">Total Sales</h3>
+                            <p className="text-xs">Total Sales</p>
+                        </div>
+                    </div>
+                    <span className={`text-lg font-semibold text-green-500`}>+$88</span>
+                </div>
+                <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <div className=" rounded-lg bg-blue-200 p-1">
+                            <IoLogoUsd className="text-2xl text-blue-700"/>
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-semibold leading-none">Total Sales</h3>
+                            <p className="text-xs">Total Sales</p>
+                        </div>
+                    </div>
+                    <span className={`text-lg font-semibold text-green-500`}>+$88</span>
+                </div>
             </div>
         </div>
     );

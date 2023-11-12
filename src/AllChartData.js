@@ -667,10 +667,10 @@ const supportTicketRadialBar = {
 // }
 const totalEarningDoubleBarChart = {
   series: [{
-    data: [260, 90, 130, 145, 210, 150, 220, 160]
+    data: [70, 30, 120, 80, 60, 40, 50, 80]
   },
   {
-    data: [-70, -110, -110, -165, -50, -90, -100, -60]
+    data: [-30, -90, -20, -40, -55, -80, -70, -40]
   }
   ],
   options: {
@@ -680,9 +680,6 @@ const totalEarningDoubleBarChart = {
     chart: {
       type: 'bar',
       stacked: true,
-      // toolbar: {
-      //   show: false
-      // }
     },
     colors: ['#2563eb', '#fb923c'],
     plotOptions: {
@@ -701,38 +698,6 @@ const totalEarningDoubleBarChart = {
     grid: {
       show: false,
     },
-    // xaxis: {
-    //   categories: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
-    //   axisBorder: {
-    //     show: false
-    //   },
-    //   labels: {
-    //     style: {
-    //       colors: ['#6e6b7b'],
-    //       fontSize: '12px',
-    //       fontFamily: 'Montserrat, sans-serif',
-    //       fontWeight: 400,
-    //       cssClass: 'apexcharts-xaxis-label',
-    //     }
-    //   }
-    // },
-    // yaxis: {
-    //   min: -200,
-    //   max: 300,
-    //   tickAmount: 5,
-    //   labels: {
-    //     formatter: function (y) {
-    //       return y.toFixed(0);
-    //     },
-    //     style: {
-    //       colors: ['#6e6b7b'],
-    //       fontSize: '12px',
-    //       fontFamily: 'Montserrat, sans-serif',
-    //       fontWeight: 400,
-    //       cssClass: 'apexcharts-xaxis-label',
-    //     }
-    //   }
-    // },
     tooltip: {
       enabled: false,
     },
