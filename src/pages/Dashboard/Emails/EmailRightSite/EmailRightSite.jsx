@@ -10,10 +10,12 @@ import { HiOutlineMail, HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillStar, AiOutlineFolder, AiOutlineStar } from "react-icons/ai";
 import { Tooltip } from "react-tooltip";
 import { CiShoppingTag } from "react-icons/ci";
-import user1 from "./../../../../assets/pic1.png"
 import { RiArrowDownSFill, RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
-import { MdPrint } from "react-icons/md";
-import { FaDocker, FaHandDots, FaPrint } from "react-icons/fa6";
+import { FaPhotoFilm, FaPrint } from "react-icons/fa6";
+import { MdOutlinePictureAsPdf } from "react-icons/md";
+import user1 from "./../../../../assets/pic1.png"
+import pdf from "../../../../assets/coding/pdf.png"
+import pdfImg from "../../../../assets/coding/pdfImg.png"
 
 const EmailRightSite = () => {
     const [select, setSelect] = useState(false);
@@ -114,7 +116,7 @@ const EmailRightSite = () => {
                 {
                     emailClick &&
                     <div className="absolute right-0 top-0 bottom-0 bg-slate-100 rounded-tr-xl rounded-br-xl w-full h-[470px] overflow-y-scroll myEmailScroll">
-                        <div className={`MAIN_ICONS_FULL_PART ${isDarkMode ? "bg-slate-800" : "bg-white" } py-2 px-4`}>
+                        <div className={`MAIN_ICONS_FULL_PART ${isDarkMode ? "bg-slate-800" : "bg-white"} py-2 px-4`}>
                             <div className="grid grid-cols-3 md:grid-cols-11 py-3 border-0 border-b border-solid border-slate-300">
                                 {/* first part */}
                                 <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
@@ -138,7 +140,7 @@ const EmailRightSite = () => {
                                 </div>
                             </div>
                             {/* THREE PART */}
-                            <div className="ICONS grid grid-cols-3 md:grid-cols-5 py-3 border-0 border-b border-solid border-slate-300">
+                            <div className="ICONS grid grid-cols-3 md:grid-cols-5 py-2 ">
                                 <div className="col-span-2 md:col-span-4 flex items-center">
                                     <div className="flex items-center gap-4 mx-3 z-10">
                                         <Tooltip id="my-tooltip" place="top" />
@@ -161,25 +163,66 @@ const EmailRightSite = () => {
                             </div>
                         </div>
                         {/* email content */}
-                        <div className={`${isDarkMode ? "bg-slate-800" : "bg-white" } text-accent mt-4 mx-4 py-2 px-3 rounded-t-lg`}>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
-                            <h2>This is a email click pages</h2>
+                        <div className={`${isDarkMode ? "bg-slate-800" : "bg-white"} text-accent mt-4 mx-4 py-2 px-3 rounded-t-lg`}>
+                            <div className="flex items-start justify-between py-2 px-3 border-0 border-b border-solid border-slate-300">
+                                <div className="flex items-center gap-3">
+                                    <img src={user1} alt="user image" className="w-8 h-8 rounded-full" />
+                                    <div>
+                                        <h2 className="font-medium">Katie Brandt</h2>
+                                        <p className="text-xs">james25@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-4">
+                                    <h3 className="text-sm font-medium">Nov 12, 2023</h3>
+                                    <button>
+                                        <FaPhotoFilm className="text-lg" />
+                                    </button>
+                                    <button className="" onClick={() => setStartClick(!startClick)}>
+                                        {
+                                            startClick ?
+                                                <AiFillStar className="text-xl text-yellow-500" />
+                                                :
+                                                <AiOutlineStar className="text-xl " />
+                                        }
+
+                                    </button>
+                                    <button className="hover:bg-slate-200 p-1 rounded-2xl transition-all duration-200">
+                                        <BiDotsVertical className="text-2xl" />
+                                    </button>
+                                </div>
+                            </div>
+                            {/* main text */}
+                            <div className="py-5 px-5 border-0 border-b border-solid border-slate-300 ">
+                                <p className="text-justify">
+                                    Guy national course pay small per. Commercial research lose key fight marriage. Young series raise degree foot degree detail number. Crime gas real pass white. Television success east.
+                                    Into miss knowledge result. Seat carry tax beat line. Amount language paper machine fly. Music several common former. More mouth year site move hold. Billion material born news western late.
+                                </p>
+                                <p className="text-justify pt-3">
+                                    World them term identify. Rule southern condition thought. Article successful traditional friend. Phone financial skill theory. Change Mr experience. Everyone help structure much family. Voice general group likely.
+                                </p>
+                                <div className="pt-8">
+                                    <p className="text-base">saiful isalam </p>
+                                    <p className="mt-1 border-0 border-t border-solid border-slate-300 w-1/5 font-medium">
+                                        Your Signature
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="py-4 px-5 ">
+                                <p className="text-sm font-medium text-slate-400">2 Attachments</p>
+                                <div className="space-y-3">
+                                    <div className="flex items-center gap-2 mt-5">
+                                        <img src={pdf} alt="" className="object-cover w-7 h-8" />
+                                        <h5 className="text-xs font-medium text-slate-700">logo.pdf</h5>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <img src={pdfImg} alt="" className="object-cover w-7 h-8" />
+                                        <h5 className="text-xs font-medium text-slate-700">performance.xls</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={`${isDarkMode ? "bg-slate-800" : "bg-white"} text-accent mt-3 mx-4 py-3 px-3 rounded-t-lg`}>
+                            <h2 className="text-sm font-medium"> Click here to <span className="text-blue-700 text-base cursor-pointer">Reply</span> or <span className="text-blue-700 text-base cursor-pointer">Forward</span></h2>
                         </div>
                     </div>
                 }
