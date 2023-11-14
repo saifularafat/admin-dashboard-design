@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 export const NavLinks = ({ path, Icon, linkName, numberBg, numberText, number }) => {
     return (
         <NavLink to={path}
-            className={({ isActive }) => (isActive ? 'active' : ' default')}
+            className={({ isActive }) => (isActive ? 'default' : ' active')}
         >
             <div className="w-full flex items-center justify-between">
                 <div className="flex items-center gap-2">

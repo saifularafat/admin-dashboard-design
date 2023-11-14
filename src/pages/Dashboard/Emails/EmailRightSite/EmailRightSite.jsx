@@ -12,13 +12,13 @@ import { Tooltip } from "react-tooltip";
 import { CiShoppingTag } from "react-icons/ci";
 import { RiArrowDownSFill, RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
 import { FaPhotoFilm, FaPrint } from "react-icons/fa6";
+import { SlArrowLeft } from "react-icons/sl";
 import user1 from "./../../../../assets/pic1.png"
 import user2 from "./../../../../assets/pic2.png"
 import user3 from "./../../../../assets/pic3.png"
 import user4 from "./../../../../assets/pic4.png"
 import pdf from "../../../../assets/coding/pdf.png"
 import pdfImg from "../../../../assets/coding/pdfImg.png"
-import EmailTable from "../EmailTable";
 
 const EmailRightSite = () => {
     const [select, setSelect] = useState(false);
@@ -121,7 +121,6 @@ const EmailRightSite = () => {
                             <BiErrorAlt className="text-xl" data-tooltip-id="my-tooltip" data-tooltip-content="Mark to spam" />
                         </div>
                     </button>
-                    {/* <EmailTable userImage={user1} userName="Katie Brandt" userTitle32="Bring smile discussion same boy include care" emailClick={emailClick} setEmailClick={setEmailClick} /> */}
                     {
                         emailClick &&
                         <div className="absolute right-0 top-0 bottom-0 bg-slate-100 rounded-tr-xl rounded-br-xl w-full h-[470px] overflow-y-scroll myEmailScroll">
@@ -130,7 +129,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailClick(!emailClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Bring smile discussion same boy include care.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -286,7 +285,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailOneClick(!emailOneClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Always beautiful name push miss international.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -441,7 +440,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailTwoClick(!emailTwoClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Simply idea project health prevent beyond both after.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -594,7 +593,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailThreeClick(!emailThreeClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Amount collection marriage price.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -747,7 +746,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailClick(!emailClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Bring smile discussion same boy include care.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -902,7 +901,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailTwoClick(!emailTwoClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Simply idea project health prevent beyond both after.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -1056,7 +1055,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailOneClick(!emailOneClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Always beautiful name push miss international.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -1212,7 +1211,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailClick(!emailClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Bring smile discussion same boy include care.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -1367,7 +1366,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailThreeClick(!emailThreeClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Amount collection marriage price.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -1519,7 +1518,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailTwoClick(!emailTwoClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Simply idea project health prevent beyond both after.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -1673,7 +1672,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailOneClick(!emailOneClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Always beautiful name push miss international.</h2>
                                         <div className="flex items-center gap-2 pl-2">
@@ -1828,7 +1827,7 @@ const EmailRightSite = () => {
                                     {/* first part */}
                                     <div className="BACK_TITLE col-span-2 md:col-span-10 flex items-center">
                                         <button onClick={() => setEmailThreeClick(!emailThreeClick)}>
-                                            <RiArrowDownSFill className="text-2xl font-semibold" />
+                                            <SlArrowLeft className="text-2xl font-semibold hover:bg-slate-50 p-1 rounded-2xl transition-all duration-200" />
                                         </button>
                                         <h2 className="pl-3 text-sm font-semibold">Amount collection marriage price.</h2>
                                         <div className="flex items-center gap-2 pl-2">
