@@ -14,7 +14,7 @@ const Emails = () => {
                     <EmailRightSite />
                 </div>
             </div>
-            <Footer />
+            <Footer /> 
         </div>
     );
 };
